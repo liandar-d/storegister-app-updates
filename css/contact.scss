@@ -1,0 +1,167 @@
+@import "mixins/buttons.scss";
+@import "mixins/table.scss";
+@import "mixins/form.scss";
+#main-container {
+    .contact {
+        .icon-call {
+            color: #238A8C;
+
+            .icon-call-name {
+                margin-top: 13px;
+                font-weight: 600;
+                color: #238A8C;
+                height: 15px;
+            }
+
+            svg {
+                .contact-svg {
+                    fill: #238A8C;
+                }
+            }
+
+            .home-contact {
+                font-size: 14px;
+
+                .contact-home {
+                    font-size: 14px;
+                    color: var(--font-color);
+                }
+            }
+        }
+
+        .create-contact {
+            background-color: #238A8C;
+            color: #FFFFFF;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+
+        .save-btn {
+            @include save-btn;
+        }
+
+        .btn-close {
+            @include btn-close;
+        }
+
+        .clear-btn {
+            @include cancel-btn;
+        }
+
+        .offcanvas {
+            background-color: var(--bg-color);
+        }
+
+        .offcanvas-header {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .form-control {
+            border-radius: 0;
+            border-bottom: 1px solid;
+            border-bottom-color: var(--sidemenu-hover-color);
+            font-size: 14px;
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            ~ label {
+                opacity: 1;
+            }
+        }
+
+        label {
+            color: var(--secondary-color);
+        }
+
+        #ContactPhoneNo {
+            height: 58px;
+            width: 252px;
+        }
+
+        .form-select {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid;
+            border-bottom-color: var(--sidemenu-hover-color);
+            font-size: 14px;
+            background-color: var(--bg-color);
+            color: var(--font-color);
+            ~ label {
+                opacity: 1;
+            }
+
+            option {
+
+                &:active,
+                &:hover {
+                    color: var(--bg-color);
+                    background-color: var(--font-color);
+                }
+            }
+        }
+
+        h5.offcanvas-title {
+            color: var(--icon-color);
+            font-size: 22px;
+        }
+
+        .sidemenu {
+            width: calc(100% - 55%);
+            box-shadow: -7px 0px 6px #0000004F;
+        }
+
+        .offcanvas-body {
+           @include table;
+
+            tbody {
+
+                .custom-width-first {
+                    width: 282px;
+                }
+
+                .custom-width-second {
+                    width: 100px;
+
+                    .form-control {
+                        font-size: 12px;
+                    }
+                }
+
+                .custom-width-four {
+                    width: 150px;
+                }
+
+            }
+
+            .form-control {
+                @include form;
+            }
+        }
+        .search-btn-section {
+            .search-text {
+                @include search-text;
+            }
+            .search-dropdown {
+                @include search-text;
+                border: none;
+            }
+            .search-btn {
+                @include search-text;
+                border: none;
+                background-color: var(--primary-menu-color);
+                color: var(--sidemenu-hover-color);
+            }
+        }
+        .contact-inner-table {
+            @include table;
+            thead {
+                background-color: var(--primary-color);
+                th {
+                    font-weight: 500;
+                }
+            }
+            .btn-secondary {
+                font-size: 14px;
+            }
+        }
+    }
+}

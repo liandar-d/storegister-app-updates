@@ -1,0 +1,19 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "storegister-app-master": "node-sass css/testing.scss css/testing.css css/contact.scss css/contact.css css/mixins/button.scss css/mixins/button.css css/mixins/form.scss css/mixins/form.css css/mixins/table.scss css/mixins/table.css css/layout/layout.scss css/layout/layout.css css/layout/side-nav.scss css/layout/side-nav.css --w --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+  "description": "",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

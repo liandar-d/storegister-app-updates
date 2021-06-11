@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoRegister Layout</title>
+    <link rel="stylesheet" href="./css/layout/layout.css">
+    <link rel="stylesheet" href="./css/layout/side-nav.css">
+    <link rel="stylesheet" href="./css/testing.css">
+    <link rel="stylesheet" href="./css/intlTelInput.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="sticky-top">
+            <div class="logo">
+                <img src="./images/logo.png" alt="StoRegister">
+            </div>
+            <div class="search align-self-center">
+                <i class="medium text-white material-icons search-icon">search</i>
+                <input class="form-control me-2 w-100" type="search" placeholder="Search Anything.."
+                    aria-label="Search">
+            </div>
+            <div class="toolbar align-self-center">
+                <div class="d-flex width-adjust">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="dropdown notificationMenu">
+                        <a class="btn bg-transparent text-white dropdown-toggle" href="#" role="button"
+                            id="notificationMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons tiny notification">
+                                notifications
+                            </span>
+                            <span class="count"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="notificationMenu">
+                            <li>
+                                <span class="mb-0 float-start dropdown-header">Notifications</span>
+                                <div class="dropdown-item notification-wrapper alert alert-dismissible">
+                                    <div class="container-fluid ps-0 pe-0">
+                                        <div class="d-inline-flex flex-row">
+                                            <div class="align-self-center">
+                                                <div class="preview-icon text-center">
+                                                    <i class="material-icons notify tiny">notifications</i>
+                                                </div>
+                                            </div>
+                                            <div class="align-self-center ps-2 pe-2">
+                                                <span class="notification-content my-auto text-wrap">Lorem ipsum dolor
+                                                    sit amet.</span>
+                                            </div>
+                                            <div class="align-self-start">
+                                                <div class="text-center">
+                                                    <span class="material-icons btn-close" data-bs-dismiss="alert">
+                                                        close
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-item notification-wrapper alert alert-dismissible">
+                                    <div class="container-fluid ps-0 pe-0">
+                                        <div class="d-inline-flex flex-row">
+                                            <div class="align-self-center">
+                                                <div class="preview-icon text-center">
+                                                    <i class="material-icons notify tiny">notifications</i>
+                                                </div>
+                                            </div>
+                                            <div class="align-self-center ps-2 pe-2">
+                                                <span class="notification-content my-auto text-wrap">Lorem ipsum dolor
+                                                    sit amet sit amet consectetur.</span>
+                                            </div>
+                                            <div class="align-self-start">
+                                                <div class="text-center">
+                                                    <span class="material-icons btn-close" data-bs-dismiss="alert">
+                                                        close
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-item notification-wrapper alert alert-dismissible">
+                                    <div class="container-fluid ps-0 pe-0">
+                                        <div class="d-inline-flex flex-row">
+                                            <div class="align-self-center">
+                                                <div class="preview-icon text-center">
+                                                    <i class="material-icons notify tiny mx-0">notifications</i>
+                                                </div>
+                                            </div>
+                                            <div class="align-self-center ps-2 pe-2">
+                                                <span class="notification-content my-auto text-wrap">Lorem ipsum dolor
+                                                    sit amet sit amet consectetur.</span>
+                                            </div>
+                                            <div class="align-self-start">
+                                                <div class="text-center">
+                                                    <span class="material-icons btn-close" data-bs-dismiss="alert">
+                                                        close
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="tiny material-icons ms-2 settings">
+                        settings
+                    </span>
+                    <div class="dropdown ms-3 language">
+                        <a class="btn bg-transparent text-white dropdown-toggle" href="#" role="button" id="language"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="flag-icon flag-icon-us"></span> En
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="language">
+                            <li>
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <ul class="list-unstyled">
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-ar"></span> Arabic</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-pk"></span> Urdu</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-il"></span> Hebrew </a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-se"></span> Swedish</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-no"></span> Norwegian</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-de"></span> Danish</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-fi"></span> Finnish</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-es"></span> Spanish</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-nl"></span> Dutch</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-it"></span> Italian</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <ul class="list-unstyled">
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-gr"></span> German</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-pl"></span> Polish</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-fr"></span> French</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-ro"></span> Romanian </a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-sk"></span> Slovak</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-pt"></span> Portuguese</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-cz"></span> Czech</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-my"></span> Malay</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-in"></span> Hindi</a></li>
+                                        <li class="list"><a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-us"></span> English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./images/man.png" alt="" class="img-fluid ms-3 profile-image">
+                    <div class="dropdown ms-1 profile-dropdown">
+                        <a class="btn bg-transparent text-white dropdown-toggle" href="#" role="button"
+                            id="profile-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Welcome, Chetan Kumar Naidu
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="profile-dropdown">
+                            <li class="pt-2 pb-2">
+                                <span class="material-icons-outlined d-inline ps-3 my-auto">
+                                    settings
+                                </span>
+                                <a class="dropdown-item d-inline my-auto stretched-link" href="#">Account Set Up</a>
+                            </li>
+                            <li class="pt-2 pb-2">
+                                <span class="material-icons-outlined d-inline ps-3 my-auto">
+                                    power_settings_new
+                                </span>
+                                <a class="dropdown-item d-inline stretched-link" href="#">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown modulemenu">
+                        <a class="btn bg-transparent text-white dropdown-toggle" href="#" role="button" id="modulemenu"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-icons tiny ms-3 apps">
+                                apps
+                            </span>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="modulemenu">
+                            <li>
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <div class="text-center ps-4 pe-4 pb-2 pt-2">
+                                        <img src="./images/menu-icons/operations.png" alt="" class="img-fluid">
+                                        <a class="dropdown-item stretched-link" href="#">Operations</a>
+                                    </div>
+                                    <div class="text-center ps-4 pe-4 pb-2 pt-2">
+                                        <img src="./images/menu-icons/reports.png" alt="" class="img-fluid">
+                                        <a class="dropdown-item" href="#">Reports</a>
+                                    </div>
+                                    <div class="text-center ps-4 pe-4 pb-2 pt-2">
+                                        <img src="./images/menu-icons/set-up.png" alt="" class="img-fluid">
+                                        <a class="dropdown-item" href="#">Set Up</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container expand" id="main-container">
+            <div class="contact">
+                <div class="d-flex icon-call pb-5">
+                    <div class="p-2 flex-grow-1">
+                        <p class="icon-call-name ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26.416" height="25.095" viewBox="0 0 26.416 25.095">
+                                <defs>
+                                    <style>
+                                    </style>
+                                </defs>
+                                <path class="contact-svg" d="M25.774,7.283H21.812V4.642A2.632,2.632,0,0,0,19.17,2H11.245A2.632,2.632,0,0,0,8.6,4.642V7.283H4.642A2.632,2.632,0,0,0,2,9.925V24.453a2.632,2.632,0,0,0,2.642,2.642H25.774a2.632,2.632,0,0,0,2.642-2.642V9.925A2.632,2.632,0,0,0,25.774,7.283ZM11.245,4.642H19.17V7.283H11.245ZM25.774,24.453H4.642V21.812H25.774Zm0-6.6H4.642V9.925H8.6v2.642h2.642V9.925H19.17v2.642h2.642V9.925h3.962Z" transform="translate(-2 -2)"/>
+                            </svg>
+                            Business
+                        </p>
+                    </div>
+                    <div class="home-contact align-self-baseline m-2 p-2 mt-3">
+                        <span class="icon-call m-0 p-0">Home / Account Setup</span><span class=" contact-home m-0 p-0"> /
+                            Business </span>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn font-sizing create-contact" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#Create-Contact" aria-controls="Create-Contact">
+                            Create contact +
+                        </button>
+
+                        <div class="offcanvas offcanvas-end sidemenu" tabindex="-1" id="Create-Contact"
+                            aria-labelledby="Create-ContactLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="Create-ContactLabel">Create Buisness</h5>
+                                <span class="material-icons-outlined btn-close mb-3" data-bs-dismiss="offcanvas">
+                                    close
+                                </span>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="ContactFirstName">
+                                                        <label for="ContactFirstName">First Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="ContactLastName">
+                                                        <label for="ContactLastName">Last Name</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" class="form-control" id="ContactEmail">
+                                                        <label for="ContactEmail">Email</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="tel" class="form-control" id="ContactPhoneNo">
+                                                        <label for="ContactPhoneNo" class="ps-5 pb-4">Contact
+                                                            No.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="date" class="form-control" id="ContactDOB">
+                                                        <label for="ContactDOB">DOB</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactGender"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactGender">Gender *</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactStage"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactStage">Contact Stage*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactStatus"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactStatus">Contact Status*</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactSource"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactSource">Contact Source*</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="ContactAddress">
+                                                        <label for="ContactAddress">Address</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactCountry"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactCountry">Country</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactState"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactState">State / Province / Region *</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactCity"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactCity">Country</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="ContactZipCode">
+                                                            <label for="ContactZipCode">Postal / Zip Code</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="ContactEnquiry">
+                                                        <label class="form-check-label" for="ContactEnquiry">
+                                                            Has Enquiry
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" id="ExpandRow" style="display:none">
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <textarea class="form-control" id="ContactMessage"></textarea>
+                                                        <label for="ContactMessage">Comments</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactEnqirySource"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactEnqirySource">Enquiry Source *</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactEnqiryType"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactEnqiryType">Enquiry Type *</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="ContactUserType"
+                                                            aria-label="Floating label select example">
+                                                            <option selected></option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ContactUserType">User Type *</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" class="btn save-btn">Save</a>
+                                <a href="" class="btn clear-btn">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-btn-section d-flex flex-row ">
+                    <div>
+                        <input type="text" class="form-control" placeholder="search text" aria-label="Username">
+
+                    </div>
+                    <div class="p-2 ms-2 me-2">
+                        <button" class="btn search-btn">
+                            Search
+                            </button>
+                    </div> 
+                    
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                  
+                            </p>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex card">
+                        <div class="d-flex  align-content-end  p-2 details">
+                            <img src="./images/card-image.png" class="" alt="">
+                            <p >
+                                ABC Storage <br>
+                                DK214585624 <br>
+                                --------------- <br>
+                                24/ 01/ 2020 <br>
+                                15, Car street Copenhagens Denmarks <br>
+                                + 44 40329 0440 <br>
+                                info@abcdstorage.com <br>
+                  
+                            </p>
+                        </div>
+                    </div>                  
+                </div>               
+            </div>
+        </div>
+        
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+-->
+    <script src="./js/site.js"></script>
+    <script src="./js/operations/quotation/quotation.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="./js/contact/contact.js"></script>
+
+</body>
+
+</html>

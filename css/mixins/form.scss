@@ -1,0 +1,31 @@
+@mixin form {
+    border: 0px;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--sidemenu-hover-color);
+    font-size: 14px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    ~ label {
+        opacity: 1;
+    }
+
+    .form-select {
+        ~ label {
+            opacity: 1;
+        }
+        option {
+
+            &:active,
+            &:hover {
+                color: var(--bg-color);
+                background-color: var(--font-color);
+            }
+        }
+    }
+
+    &::placeholder {
+        color: var(--font-color);
+        font-size: 14px;
+    }
+}
